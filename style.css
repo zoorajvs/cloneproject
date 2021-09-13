@@ -1,0 +1,530 @@
+.body{
+    background:#ffffff;
+}
+.header{
+    /* background: darkkhaki; */
+    width: 100%;
+    height: 150px;
+}
+
+.social{
+     color: #1d7af3;
+    font-weight: 700;
+    font-size: 1.2rem;
+    margin-right: 10px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* nav bar */
+.navbar{
+    width: 100%;
+    height: 90px;
+    background:#fff;
+    z-index: 100;
+}
+
+.navbar-scroll{
+    position: fixed !important;
+    top:0;
+}
+/* nav bar */
+
+/* @charset "UTF-8"; */
+/* 
+$content-width will be the max width of the content within the navigation bar. 
+$breakpoint determines at which width the media query breakpoint will take effect.
+*/
+
+body {
+  background-color: #63D6E0;
+}
+nav {
+  float: right;
+}
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+nav ul li {
+  float: left;
+  position: relative;
+}
+nav ul li a {
+  display: block;
+  padding: 0 30px;
+  line-height: 70px;
+  background: #ffffff;
+  color: #463f3f;
+  text-decoration: none;
+  /*
+  The full path of this code is nav ul li a:not(:only-child):after. This means that the code will apply to any a tag in our nav list that is NOT an only child, aka any dropdown. The :after means it comes after the output of the tag. I’ve decided that to specify any nav item as a dropdown, it will be followed by a unicode arrow – ▾ (#9662).
+  */
+}
+nav ul li a:hover {
+  background: #f2f2f2;
+  color: #0f70ee;
+}
+nav ul li a:not(:only-child):after {
+  padding-left: 50px;
+  content: ' ▾';
+}
+nav ul li ul li {
+  min-width: 190px;
+}
+nav ul li ul li a {
+  padding: 25px;
+  line-height: 20px;
+}
+
+.nav-dropdown {
+  position: absolute;
+  z-index: 1;
+  /* Guarantees that the dropdown will display on top of any content. */
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
+  display: none;
+}
+
+.nav-mobile {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: #fff;
+  height: 70px;
+  width: 70px;
+}
+
+@media only screen and (max-width: 800px) {
+  .nav-mobile {
+    display: block;
+  }
+
+  nav {
+    width: 100%;
+    padding: 70px 0 15px;
+  }
+  nav ul {
+    display: none;
+  }
+  nav ul li {
+    float: none;
+  }
+  nav ul li a {
+    padding: 25px;
+    line-height: 20px;
+  }
+  nav ul li ul li a {
+    padding-left: 40px;
+  }
+}
+#nav-toggle {
+  position: absolute;
+  left: 30px;
+  top: 22px;
+  cursor: pointer;
+  padding: 10px 35px 16px 0px;
+}
+#nav-toggle span,
+#nav-toggle span:before,
+#nav-toggle span:after {
+  cursor: pointer;
+  border-radius: 1px;
+  height: 5px;
+  width: 35px;
+  background: #463f3f;
+  position: absolute;
+  display: block;
+  content: '';
+  transition: all 300ms ease-in-out;
+}
+#nav-toggle span:before {
+  top: -10px;
+}
+#nav-toggle span:after {
+  bottom: -10px;
+}
+#nav-toggle.active span {
+  background-color: transparent;
+}
+#nav-toggle.active span:before, #nav-toggle.active span:after {
+  top: 0;
+}
+#nav-toggle.active span:before {
+  transform: rotate(45deg);
+}
+#nav-toggle.active span:after {
+  transform: rotate(-45deg);
+}
+
+@media screen and (min-width: 800px) {
+  .nav-list {
+    display: block !important;
+  }
+}
+/* 
+.navigation – the outer wrapper for the navbar. Specifies the height and color, and will stretch the full width of the viewport.
+*/
+.navigation {
+  height: 70px;
+  background: #ffffff;
+  margin-right: 250px;
+}
+
+/*
+.nav-container – the inner wrapper for the navbar. Defines how far the actual content should stretch.
+*/
+.nav-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.brand {
+  position: absolute;
+  padding-left: 20px;
+  float: left;
+  line-height: 70px;
+  text-transform: uppercase;
+  font-size: 1.4em;
+}
+.brand a,
+.brand a:visited {
+  color: #463f3f;
+  text-decoration: none;
+}
+
+
+/* poster */
+
+.poster{
+    background: #fff url(/header-bg.svg) center center no-repeat;
+    background-size: cover;
+    min-height: 600px;
+    margin-top: -105px;
+}
+.posterhd{
+    font-family: Montserrat,sans-serif;
+    font-weight: 800;
+    color: #183646;
+    margin-top: 250;
+    font-size: 3rem;
+}
+.postpara{
+    color: #34384b;
+    font-size: 1rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    display: block;
+    margin-block-start: 1rem;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+.btn2{
+    margin-top: 15px;
+    padding-left: 23rem;
+}
+
+.navbar-brand{
+    margin-left: 55px;
+}
+
+.section-title h3{
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 800;
+    color:#0091e9;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-top: 0;
+    margin-bottom: .5rem;
+    line-height: 1.2;
+    margin-top: 70;
+
+}
+.section-title p{
+    font-size: 1.8rem;
+    line-height: 38px;
+    font-weight: 500;
+    margin-bottom: 14px;
+    color: #16215c;
+    text-align: center;
+    font-family:  -apple-system,BlinkMacSystemFont,"Open Sans",sans-serif;
+
+
+}
+
+.button {
+    background-color: red; /* For browsers that do not support gradients */
+    background-image: linear-gradient(to right,#0091e9, #00bca7);
+    /* border: none; */
+    color: white;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    width: 400px;
+    border-color: aqua;
+    border: 0vmin;
+    height: 70px;
+  }
+  .button4 {border-radius: 35px;}
+
+  .fontbtn{
+      font-size: 1.6rem;
+      font-weight: 700;
+  }
+  
+  .button1{
+    background-color: red; /* For browsers that do not support gradients */
+    background-image: linear-gradient(to right,#0091e9, #00bca7);
+    text-align:center;
+    margin: 4px 2px;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    width: 125px;
+    height: 34px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #FFF; 
+    margin-top: 20px;
+    padding-top: 7px;
+    margin-left: 163px;
+   }
+
+
+/* softwares */
+
+.crtxt{
+  z-index: 10;
+  position: relative;
+}
+
+.crtxt::before{
+  content:" ";
+  background: rgb(25, 211, 211);
+  width: 110px;
+  height: 5px ;
+  position: absolute;
+  top: 20px;
+  z-index: -1;
+}
+
+.crtxt1{
+  z-index: 10;
+  position: relative;
+}
+
+.crtxt1::before {
+  content: " ";
+  background: rgb(25, 211, 211);
+  width: 234px;
+  height: 5px;
+  position: absolute;
+  top: 20px;
+  z-index: -1;
+}
+
+.v-centered {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 38px;
+
+}
+.software__row img:hover {
+  transform: scale(1.02);
+}
+.software__row img {
+  transition: all .45s;
+}
+.rounded {
+  border-radius: .25rem!important;
+}
+.mb-5 {
+  margin-bottom: 3rem!important;
+}
+.col-lg-5 {
+  flex: 0 0 auto;
+  width: 41.6666666667%;
+}
+.img1{
+  padding-top: 60px; 
+}
+h3 {
+  font-family: Montserrat,sans-serif;
+  color: #183646;
+  font-weight: 500;
+}
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font: 16;
+  font-family: -apple-system,BlinkMacSystemFont,"Open Sans",sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+.know__more {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 120px;
+  color: #333;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+/* footer  */ 
+
+ .footer{ 
+  background: #0a1929;
+   width: 100%;
+   height: 340px;
+ }
+
+ 
+.text-white {
+    color: #fff!important;
+}  
+.mt-3 {
+  margin-top: 1rem!important;
+}
+.footer h4 {
+  font-size: 22px;
+}
+.h4n{
+  font-family: Montserrat,sans-serif;
+  font-weight: bolder;
+  font-size-adjust: initial;
+}
+
+/* page 2  */
+
+.button2{
+  background-color: red; /* For browsers that do not support gradients */
+  background-image: linear-gradient(to right,#0091e9, #00bca7);
+  text-align:center;
+  margin: 4px 2px;
+  display: inline-block;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  width: 125px;
+  height: 53px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #FFF; 
+  margin-top: 20px;
+  padding-top: 13px;
+ }
+
+ .main-header {
+  /* background: #fff url(../img/header-bg.svg) center center no-repeat; */
+  background-size: cover;
+  min-height: 700px;
+}
+
+/* .row {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left:100px;
+} */
+
+.justify-content-center {
+  justify-content: center!important;
+}
+
+.crtxt2{
+  z-index: 10;
+  position: relative;
+}
+
+.crtxt2::before {
+  content: " ";
+  background: rgb(25, 211, 211);
+  width: 142px;
+  height: 5px;
+  position: absolute;
+  top: 20px;
+  z-index: -1;
+}
+
+.crtxt3{
+  z-index: 10;
+  position: relative;
+}
+
+.crtxt3::before {
+  content: " ";
+  background: rgb(25, 211, 211);
+  width: 111px;
+  height: 5px;
+  position: absolute;
+  top: 20px;
+  z-index: -1;
+}
+
+.button3{
+  background-color: red; /* For browsers that do not support gradients */
+  background-image: linear-gradient(to right,#0091e9, #00bca7);
+  text-align:center;
+  margin: 4px 2px;
+  display: inline-block;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  width: 400px;
+  height: 60px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #FFF; 
+  margin-top: 20px;
+  padding-top: 13px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+ }
+
+
+ .ntxt{
+   font-size: 3rem;
+   font-family: Montserrat,sans-serif;
+   color: #183646;
+   font-weight: 800;
+ }
+
+ .npara{
+  font-size: 1rem;
+  color: #34384b;
+  margin-top: 0;
+  margin-bottom: 1rem;
+ }
+
+.navbartool{
+  padding-top: 15px;
+}
+
+.dropdown-item{
+  font-size: 1.2rem;
+  background: 0 0;
+  font-weight: 900 !important;
+  transition: all .45s;
+  display: flex;
+  align-items: center;
+  text-align: inherit;
+  color: #8e8e8e !important;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+
+}
+.txtclr:hover, .txtclr:active{
+  color: #212529!important;
+}
+
+.poster10{
+  padding-top: 106px;
+}
+
